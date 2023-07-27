@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='/mypage.css')}}">
+  <title>Document</title>
+</head>
+<body>
+  <h3>マイページ</h3>
+  ようこそ
+  <!-- url_for() の引数は Blueprint名.メソッド名 です。 -->
+  <br>
+  <a href="{{url_for('book.book_list')}}">本の一覧</a><br>
+  <a href="{{url_for('book.book_addition')}}">本の追加</a><br>
+  <a href="{{url_for('book.book_delete')}}">削除</a><br>
+  <a href="{{url_for('book.book_update')}}">更新</a><br>
+  <a href="{{url_for('book.book_search')}}">検索</a><br>
+  <a href="{{url_for('logout')}}">ログアウト</a>
+</body>
+</html>
